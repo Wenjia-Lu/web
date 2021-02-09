@@ -2,7 +2,7 @@ body { background-color: #302f2e ; font-family: garamond; }
 h1, h2, h3, h4, h5, h6 { color: #f7bb4a;}
 ul, ol {color: white;}
 a:link {
-  color: green;
+  color:  #f3c052;
   background-color: transparent;
   text-decoration: none;
 }
@@ -17,7 +17,7 @@ a:hover {
   text-decoration: none;
 }
 a:active {
-  color: yellow;
+  color: #f0d1b2;
   background-color: transparent;
   text-decoration: underline;
 }
