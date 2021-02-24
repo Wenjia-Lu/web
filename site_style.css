@@ -1,0 +1,31 @@
+body { background-color: #3d3c3a ; font-family: garamond;}
+h1, h3 { color: #f7bb4a; }
+ul, ol {color: white;}
+a:link {
+  color:   #686457;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited { 
+  color: #686457;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffca58;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: rgb(226, 174, 31);
+  background-color: transparent;
+  text-decoration: none;
+}
+p { color: white; background-color: none;}
+img { 
+  margin: 4%; 
+  width: 20%; 
+  border: 4px solid #b4af9e; 
+  float: left;
+  padding: 0px;
+  }
