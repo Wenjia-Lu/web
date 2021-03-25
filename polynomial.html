@@ -1,34 +1,84 @@
-PAGE_TITLE = "My Polynomial"
-
-def generateBody():
-    body = "<h1>My Favorite Polynomial</h1>\n"
-    body += "<h2> x <sup>2</sup> + 15X + 56 </h2>\n"
-    body += """<p> I chose this polynomial because its factored form is made up of my birth month and date, 7 and 8. </p>"""
-    return body
-
-def makePolyTable(start, end):
-    x = start
-    phrase = '<th>x</th> <th> x <sup>2</sup> + 15X + 56 </th> \n'
-    while x <= end :
-        phrase += ('<tr><td>' + str(x) + '</td><td>' + str((x**2)+(x*15)+56) + '</td></tr>\n')
-        x += 1
-    return ('<table>' + phrase + '</table>')
-
-page = '''
 <!DOCTYPE html>
 <html>
     <head>
-        <title>_TITLE_</title>
+        <title>My Polynomial</title>
     </head>
     <body>
-        _BODY_
-        _TABLE_
+        <h1>My Favorite Polynomial</h1>
+<h2> x<sup>2</sup> + 15x + 56 </h2>
+<p> I chose this polynomial because its factored form is made up my favorite numbers, 7 and 8. </p>
+        <table border= 2%><th>x</th> <th> x<sup>2</sup> + 15X + 56</th> 
+<tr><td>-20</td><td>156</td></tr>
+<tr><td>-19</td><td>132</td></tr>
+<tr><td>-18</td><td>110</td></tr>
+<tr><td>-17</td><td>90</td></tr>
+<tr><td>-16</td><td>72</td></tr>
+<tr><td>-15</td><td>56</td></tr>
+<tr><td>-14</td><td>42</td></tr>
+<tr><td>-13</td><td>30</td></tr>
+<tr><td>-12</td><td>20</td></tr>
+<tr><td>-11</td><td>12</td></tr>
+<tr><td>-10</td><td>6</td></tr>
+<tr><td>-9</td><td>2</td></tr>
+<tr><td>-8</td><td>0</td></tr>
+<tr><td>-7</td><td>0</td></tr>
+<tr><td>-6</td><td>2</td></tr>
+<tr><td>-5</td><td>6</td></tr>
+<tr><td>-4</td><td>12</td></tr>
+<tr><td>-3</td><td>20</td></tr>
+<tr><td>-2</td><td>30</td></tr>
+<tr><td>-1</td><td>42</td></tr>
+<tr><td>0</td><td>56</td></tr>
+<tr><td>1</td><td>72</td></tr>
+<tr><td>2</td><td>90</td></tr>
+<tr><td>3</td><td>110</td></tr>
+<tr><td>4</td><td>132</td></tr>
+<tr><td>5</td><td>156</td></tr>
+<tr><td>6</td><td>182</td></tr>
+<tr><td>7</td><td>210</td></tr>
+<tr><td>8</td><td>240</td></tr>
+<tr><td>9</td><td>272</td></tr>
+<tr><td>10</td><td>306</td></tr>
+<tr><td>11</td><td>342</td></tr>
+<tr><td>12</td><td>380</td></tr>
+<tr><td>13</td><td>420</td></tr>
+<tr><td>14</td><td>462</td></tr>
+<tr><td>15</td><td>506</td></tr>
+<tr><td>16</td><td>552</td></tr>
+<tr><td>17</td><td>600</td></tr>
+<tr><td>18</td><td>650</td></tr>
+<tr><td>19</td><td>702</td></tr>
+<tr><td>20</td><td>756</td></tr>
+<tr><td>21</td><td>812</td></tr>
+<tr><td>22</td><td>870</td></tr>
+<tr><td>23</td><td>930</td></tr>
+<tr><td>24</td><td>992</td></tr>
+<tr><td>25</td><td>1056</td></tr>
+<tr><td>26</td><td>1122</td></tr>
+<tr><td>27</td><td>1190</td></tr>
+<tr><td>28</td><td>1260</td></tr>
+<tr><td>29</td><td>1332</td></tr>
+<tr><td>30</td><td>1406</td></tr>
+<tr><td>31</td><td>1482</td></tr>
+<tr><td>32</td><td>1560</td></tr>
+<tr><td>33</td><td>1640</td></tr>
+<tr><td>34</td><td>1722</td></tr>
+<tr><td>35</td><td>1806</td></tr>
+<tr><td>36</td><td>1892</td></tr>
+<tr><td>37</td><td>1980</td></tr>
+<tr><td>38</td><td>2070</td></tr>
+<tr><td>39</td><td>2162</td></tr>
+<tr><td>40</td><td>2256</td></tr>
+<tr><td>41</td><td>2352</td></tr>
+<tr><td>42</td><td>2450</td></tr>
+<tr><td>43</td><td>2550</td></tr>
+<tr><td>44</td><td>2652</td></tr>
+<tr><td>45</td><td>2756</td></tr>
+<tr><td>46</td><td>2862</td></tr>
+<tr><td>47</td><td>2970</td></tr>
+<tr><td>48</td><td>3080</td></tr>
+<tr><td>49</td><td>3192</td></tr>
+<tr><td>50</td><td>3306</td></tr>
+</table>
     </body>
 </html>
-'''
-
-page = page.replace("_TITLE_",PAGE_TITLE)
-page = page.replace("_BODY_",generateBody())
-page = page.replace("_TABLE_",makePolyTable(-20, 50))
-
-print(page)
